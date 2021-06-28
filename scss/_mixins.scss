@@ -1,0 +1,28 @@
+@mixin  list-unstyled{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+@mixin flex-el {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin breakpoint-down($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+       @content; 
+    }
+}
+
+@mixin breakpoint-up($breakpoint) {
+    @media only screen and (min-width: $breakpoint) {
+       @content; 
+    }
+}
+
+@mixin breakpoint-between ($min-breakpoint, $max-breakpoint) {
+    @media only screen and (min-width:$min-breakpoint) and (max-width:$max-breakpoint){
+        @content;
+    }
+}
