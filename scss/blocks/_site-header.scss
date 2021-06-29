@@ -47,6 +47,8 @@
 
 @include breakpoint-down(720px){
     .site-nav__list{
+        position: absolute;
+        left: 0;
         flex-direction: column;
     }
     .site-nav__item a{
@@ -55,6 +57,8 @@
     }
     .site-nav__item{
         border-top: 1px solid #fff;
+        margin-bottom: 25px;
+        right: 0;
     }
     .site-nav__burger{
         display: block;
