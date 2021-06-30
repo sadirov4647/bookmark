@@ -1,8 +1,19 @@
 .hero{
     padding-bottom: 80px;
 }
+.hero__container{
+    max-width: 1182px;
+}
+.hero__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    background: url(/images/hero/herobg.png) no-repeat;
+    background-size: calc(100%, 200px);
+}
 .hero__text{
     max-width: 540px;
+    margin-right: 68px;
+    padding-top: 50px;
 }
 .hero__title{
     font-weight: 500;
@@ -29,12 +40,32 @@
     text-decoration: none;
     color: #fff;
     font-size: 14px;
+    border: 2px solid transparent;
+
+    &:hover{
+        background-color: #fff;
+        border: 2px solid $blue-color;
+        color: $blue-color;
+    }
 }
 .hero__fox{
     padding: 10px 24px;
     background-color: #f7f7f7;
     text-decoration: none;
+    border: 2px solid transparent;
     color: $text-color;
     font-size: 14px;
     border-radius: 5px;
+
+    &:hover{
+        background-color: #fff;
+        color: $text-color;
+        border: 2px solid #5B6074;
+    }
+}
+.hero__img{
+    background: url(/images/hero/phone.png) no-repeat;
+    background-size: cover;
+    width: 534px;
+    height: 400px;
 }
