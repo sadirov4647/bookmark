@@ -47,14 +47,20 @@
 
 @include breakpoint-down(720px){
     .site-nav__list{
+        display: none;
         position: absolute;
         position: fixed;
         width: 100%;
         height: 100%;
         right: 0;
         top: 20%;
+        text-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
-        background-color: $text-color;
+        align-items: initial;
+        background-color: #242A45;
     }
     .site-nav__item a{
         font-size: 20px;
@@ -64,7 +70,7 @@
     .site-nav__item{
         border-top: 1px solid #fff;
         padding-top: 24px;
-        margin-bottom: 25px;
+        padding-bottom: 25px;
         margin-right: 0;
     }
     .site-nav__burger{
