@@ -1,0 +1,28 @@
+.tabs__features{
+    display: flex;
+    justify-content: center;
+    @include list-unstyled;
+}
+.tabs-features__link{
+    display: block;
+    text-decoration: none;
+    padding: 15px 45px;
+    color: $text-color;
+
+    &:hover{
+        color: $red-color;
+    }
+}
+
+.tabs-features__item--active .tabs-features__link{
+    background-color: #fff;
+    color: $red-color;
+}
+
+.features__panel{
+    display: none;
+
+    &--active{
+        display: block;
+    }
+}

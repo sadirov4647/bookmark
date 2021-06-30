@@ -1,5 +1,8 @@
 .hero{
     padding-bottom: 80px;
+    background: url(/images/hero/site-hero-desktop-right-bg.png) no-repeat;
+    background-position: calc(50% + 520px);
+    background-size: contain;
 }
 .hero__container{
     max-width: 1182px;
@@ -7,8 +10,6 @@
 .hero__wrap{
     display: flex;
     flex-wrap: wrap;
-    background: url(/images/hero/herobg.png) no-repeat;
-    background-size: calc(100%, 200px);
 }
 .hero__text{
     max-width: 540px;
@@ -62,10 +63,4 @@
         color: $text-color;
         border: 2px solid #5B6074;
     }
-}
-.hero__img{
-    background: url(/images/hero/phone.png) no-repeat;
-    background-size: cover;
-    width: 534px;
-    height: 400px;
 }
