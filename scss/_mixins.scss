@@ -8,6 +8,21 @@
     flex-wrap: wrap;
     align-items: center;
 }
+@mixin button-el {
+    padding: 10px 14px;
+    background-color: $blue-color;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #fff;
+        border: 2px solid $blue-color;
+        color: $blue-color;
+    }
+}
 
 @mixin breakpoint-down($breakpoint) {
     @media only screen and (max-width: $breakpoint) {

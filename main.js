@@ -27,11 +27,13 @@ if(elTabsFeaturesLink.length > 0){
 
             link.parentElement.classList.add('tabs-features__item--active');
 
-            elsPanel.forEach(function(panel){
-                panel.classList.remove('features__panel-active')
+            elsPanel.forEach(function (panel) {
+                panel.classList.remove('features__panel--active')
             });
 
-            document.querySelector(link.getAttribute('href')).classList.add('.features__panel--active');
-        })
+            document.querySelector(link.getAttribute('href')).classList.add('features__panel--active');
+        });
+        
+       });
     }
-    )}
+    

@@ -2,18 +2,25 @@
     display: flex;
     justify-content: center;
     @include list-unstyled;
+    margin-bottom: 72px;
+}
+.features__header{
+    margin-bottom: 72px;
 }
 .tabs-features__link{
     display: block;
     text-decoration: none;
     padding: 15px 45px;
     color: $text-color;
+    background-color: darkseagreen;
 
     &:hover{
         color: $red-color;
     }
 }
-
+.tabs-features__item:not(:last-child){
+    margin-right: 90px;
+}
 .tabs-features__item--active .tabs-features__link{
     background-color: #fff;
     color: $red-color;
@@ -21,8 +28,15 @@
 
 .features__panel{
     display: none;
+    max-width: 445px;
 
     &--active{
         display: block;
     }
+}
+.panel__heading{
+    color: $text-color;
+}
+.features__btn{
+    @include button-el;
 }
