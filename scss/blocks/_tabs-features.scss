@@ -13,7 +13,7 @@
     padding: 15px 45px;
     color: $text-color;
     background-color: darkseagreen;
-
+    
     &:hover{
         color: $red-color;
     }
@@ -28,11 +28,18 @@
 
 .features__panel{
     display: none;
-    max-width: 445px;
-
+   
     &--active{
         display: block;
     }
+}
+.simple__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.simple-text__wrapper{
+    max-width: 445px;
 }
 .panel__heading{
     color: $text-color;
