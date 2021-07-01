@@ -1,8 +1,9 @@
 .features{
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 150px;
     background: url(/images/features/features_bg.svg) no-repeat;
-    background-position: left bottom;
+    background-position: left calc(50% + 200px);
 }
 .features__header{
     max-width: 540px;
