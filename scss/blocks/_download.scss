@@ -1,3 +1,7 @@
+
+.download__container{
+    max-width: 911px;
+}
 .dowload__header{
     max-width: 540px;
     margin-left: auto;
@@ -13,7 +17,12 @@
 .download__info{
     opacity: 0.5;
 }
-
+.cards__download{
+    display: flex;
+    justify-content: space-between;
+    height: 460px;
+    flex-wrap: wrap;
+}
 .download__card{
     padding-top: 50px;
     padding-bottom: 25px;
@@ -24,6 +33,7 @@
     background: #FFFFFF;
     box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
     border-radius: 15px;
+    margin-bottom: 32px;
 }
 .download__card--wrapper{
     color: $text-color;
@@ -52,6 +62,24 @@
     font-size: 15px;
     opacity: 0.5;
     margin: 0;
+}
+.start-card{
+    align-self: flex-start;
+}
+.firefox-card{
+    align-self: center;
+    
+    .firefox__card--wrapper::before{
+        background: url(/images/download/dragon.png) no-repeat;
+        width: 105px;
+    }
+}
+.opera-card{
+    align-self: flex-end;
+
+    .opera__card--wrapper::before{
+        background: url(/images/download/opera.svg) no-repeat;
+    }
 }
 .download__card--btn{
     padding: 10px 35px;

@@ -1,5 +1,6 @@
 .tabs__features{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     @include list-unstyled;
     margin-bottom: 72px;
@@ -36,6 +37,7 @@
 .panel__wrapper{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .panel-text__wrapper{
