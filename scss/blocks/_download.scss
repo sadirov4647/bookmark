@@ -20,7 +20,6 @@
 .cards__download{
     display: flex;
     justify-content: space-between;
-    height: 460px;
     flex-wrap: wrap;
 }
 .download__card{
@@ -34,6 +33,7 @@
     box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
     border-radius: 15px;
     margin-bottom: 32px;
+    align-self: flex-start;
 }
 .download__card--wrapper{
     color: $text-color;
@@ -64,10 +64,11 @@
     margin: 0;
 }
 .start-card{
-    align-self: flex-start;
+
 }
 .firefox-card{
-    align-self: center;
+    margin-top: 50px;
+    padding-top: 50px;
     
     .firefox__card--wrapper::before{
         background: url(/images/download/dragon.png) no-repeat;
@@ -75,7 +76,7 @@
     }
 }
 .opera-card{
-    align-self: flex-end;
+    margin-top: 80px;
 
     .opera__card--wrapper::before{
         background: url(/images/download/opera.svg) no-repeat;
