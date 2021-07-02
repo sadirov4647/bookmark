@@ -47,10 +47,12 @@
     display: none;
 }
 
+.translate-nav{
+    transform: translateX(-800px);
+}
 
 @include breakpoint-down(720px){
     .site-nav__list{
-        display: none;
         position: absolute;
         position: fixed;
         width: 100%;
@@ -64,6 +66,9 @@
         flex-direction: column;
         align-items: initial;
         background-color: #242A45;
+        transform: translateX(800px);
+        transition: 0.5s;
+        z-index: 99;
     }
     .site-nav__item a{
         font-size: 20px;

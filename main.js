@@ -1,10 +1,10 @@
 let status = false
 function show(){
     if(status){
-        document.querySelector('.site-nav__list').style.display = 'block';
+        document.querySelector('.site-nav__list').style.transform = 'translateX(0)';
         status =!status
     }else{
-        document.querySelector('.site-nav__list ').style.display = 'none';
+        document.querySelector('.site-nav__list ').style.transform = 'translateX(800px)';
         status =!status
     }
 }
