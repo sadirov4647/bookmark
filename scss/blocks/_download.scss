@@ -13,3 +13,57 @@
 .download__info{
     opacity: 0.5;
 }
+
+.download__card{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+    border-radius: 15px;
+}
+.download__card--wrapper{
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    
+    &::before{
+        content: "";
+        background: url(/images/download/chrome.png) no-repeat;
+        width: 102px;
+        height: 100px;
+        margin-bottom: 32px;
+    }
+    
+    &::after{
+        content: "";
+        background: url(/images/download/shape.svg) no-repeat;
+        width: 280px;
+        height: 4px;
+        margin-top: 32px;
+    }
+}
+.download__card--para{
+    font-size: 15px;
+    opacity: 0.5;
+    margin: 0;
+}
+.download__card--btn{
+    padding: 10px 35px;
+    background-color: $blue-color;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    
+    &:hover{
+        color: $blue-color;
+        background-color: #fff;
+        border: 2px solid $blue-color;
+    }
+}
