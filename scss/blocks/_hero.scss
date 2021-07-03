@@ -32,6 +32,10 @@
 .hero__links{
     display: flex;
     align-items: center;
+
+    & a{
+        white-space: nowrap;
+    }
 }
 .hero__google{
     padding: 10px 24px;
@@ -42,7 +46,7 @@
     color: #fff;
     font-size: 14px;
     border: 2px solid transparent;
-
+    
     &:hover{
         background-color: #fff;
         border: 2px solid $blue-color;
@@ -57,7 +61,7 @@
     color: $text-color;
     font-size: 14px;
     border-radius: 5px;
-
+    
     &:hover{
         background-color: #fff;
         color: $text-color;

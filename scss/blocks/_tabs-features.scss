@@ -29,7 +29,7 @@
 
 .features__panel{
     display: none;
-   
+    
     &--active{
         display: block;
     }
@@ -48,4 +48,33 @@
 }
 .features__btn{
     @include button-el;
+}
+
+
+
+@include breakpoint-down(720px){
+    .tabs__features{
+        flex-direction: column;
+    }
+    .tabs-features__item:not(:last-child){
+        margin-right: 0;
+    }
+    .tabs-features__item{
+        align-self: center;
+    }
+    .panel-text__wrapper{
+        
+        
+        .panel__heading{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 52px;
+            margin-bottom: 0;
+        }
+        & p{
+            margin: 0;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
 }
