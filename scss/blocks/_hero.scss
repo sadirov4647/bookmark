@@ -32,7 +32,7 @@
 .hero__links{
     display: flex;
     align-items: center;
-
+    
     & a{
         white-space: nowrap;
     }
@@ -66,5 +66,21 @@
         background-color: #fff;
         color: $text-color;
         border: 2px solid #5B6074;
+    }
+}
+
+
+@include breakpoint-down(576px){
+    .hero__text{
+        text-align: center;
+        margin-right: 0;
+    }
+    .hero__title{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .hero__para{
+        font-size: 15px;
+        line-height: 25px;
     }
 }

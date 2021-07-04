@@ -51,3 +51,22 @@
         color: $red-color;
     }
 }
+
+
+@include breakpoint-down(576px){
+    .main-footer__form{
+        flex-direction: column;
+    }
+    .main-footer__input-wrapper{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .main-footer__input{
+        width: 100%;
+    }
+    .main-footer__btn{
+        text-align: center;
+        width: 100%;
+    }
+}

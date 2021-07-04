@@ -79,3 +79,13 @@
         border: 2px solid $blue-color;
     }
 }
+
+
+@include breakpoint-down(576px){
+    .download__card{
+        margin: 0 auto;
+    }
+    .download__card:not(:last-child){
+        margin-bottom: 40px;
+    }
+}

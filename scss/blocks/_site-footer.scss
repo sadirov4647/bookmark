@@ -43,3 +43,23 @@
 .social__item:not(:last-child){
     margin-right: 40px;
 }
+
+
+@include breakpoint-down(576px){
+    .site__footer--wrapper{
+        flex-direction: column;
+    }
+    .footer__list{
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+    .footer__list li{
+        align-self: center;
+        margin-right: 0;
+    }
+    .footer__list li:not(:last-child){
+        margin-right: 0;
+    }
+}

@@ -42,17 +42,22 @@
 }
 .panel-text__wrapper{
     max-width: 445px;
+
+    & p{
+        opacity: 0.5;
+    }
 }
 .panel__heading{
     color: $text-color;
 }
+
 .features__btn{
     @include button-el;
 }
 
 
 
-@include breakpoint-down(720px){
+@include breakpoint-down(576px){
     .tabs__features{
         flex-direction: column;
     }
@@ -63,8 +68,9 @@
         align-self: center;
     }
     .panel-text__wrapper{
-        
-        
+        margin-top: 32px;
+        text-align: center;
+
         .panel__heading{
             font-weight: 500;
             font-size: 24px;
@@ -76,5 +82,8 @@
             font-size: 15px;
             line-height: 25px;
         }
+    }
+    .features__btn{
+        display: none;
     }
 }
