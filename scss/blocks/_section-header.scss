@@ -1,0 +1,15 @@
+.section__header{
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.section__title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    color: $text-color;
+}
+.section__info{
+    opacity: 0.5;
+}

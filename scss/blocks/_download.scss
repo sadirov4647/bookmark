@@ -2,21 +2,6 @@
 .download__container{
     max-width: 911px;
 }
-.dowload__header{
-    max-width: 540px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.download__title{
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 52px;
-    color: $text-color;
-}
-.download__info{
-    opacity: 0.5;
-}
 .cards__download{
     display: flex;
     justify-content: space-between;
@@ -63,9 +48,7 @@
     opacity: 0.5;
     margin: 0;
 }
-.start-card{
 
-}
 .firefox-card{
     margin-top: 50px;
     padding-top: 50px;

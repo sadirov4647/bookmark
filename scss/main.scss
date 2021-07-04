@@ -2,12 +2,14 @@
 @import "normalize";
 @import "mixins";
 @import "general";
+@import "blocks/section-header";
 @import "blocks/container";
 @import "blocks/site-header";
 @import 'blocks/hero';
 @import 'blocks/features';
 @import 'blocks/tabs-features';
 @import 'blocks/download';
+@import 'blocks/faq';
 @import 'blocks/main-footer';
 @import 'blocks/site-footer';
 @import "blocks/visually-hidden";
