@@ -53,7 +53,7 @@
 }
 
 
-@include breakpoint-down(576px){
+@include breakpoint-down(600px){
     .main-footer__form{
         flex-direction: column;
     }

@@ -13,7 +13,6 @@
     text-decoration: none;
     padding: 15px 45px;
     color: $text-color;
-    background-color: darkseagreen;
     
     &:hover{
         color: $red-color;
@@ -57,7 +56,7 @@
 
 
 
-@include breakpoint-down(576px){
+@include breakpoint-down(600px){
     .tabs__features{
         flex-direction: column;
     }
@@ -85,5 +84,20 @@
     }
     .features__btn{
         display: none;
+    }
+}
+@include breakpoint-between(601px, 855px){
+    .tabs-features__item:not(:last-child){
+        margin-right: 20px;
+    }
+    .tabs-features__link{
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+}
+
+@include breakpoint-between(856px, 1000px){
+    .tabs-features__item:not(:last-child){
+        margin-right: 40px;
     }
 }

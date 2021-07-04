@@ -81,11 +81,16 @@
 }
 
 
-@include breakpoint-down(576px){
+@include breakpoint-down(600px){
     .download__card{
         margin: 0 auto;
     }
     .download__card:not(:last-child){
         margin-bottom: 40px;
+    }
+}
+@include breakpoint-between(601px, 855px){
+    .firefox-card{
+        margin-top: 0;
     }
 }

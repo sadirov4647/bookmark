@@ -45,7 +45,7 @@
 }
 
 
-@include breakpoint-down(576px){
+@include breakpoint-down(600px){
     .site__footer--wrapper{
         flex-direction: column;
     }
@@ -61,5 +61,17 @@
     }
     .footer__list li:not(:last-child){
         margin-right: 0;
+    }
+}
+
+@include breakpoint-between(601px, 855px){
+    .footer__logo{
+        margin-right: 30px;
+    }
+    .footer__list{
+        margin-right: 50px;
+    }
+    .footer__item:not(:last-child){
+        margin-right: 30px;
     }
 }

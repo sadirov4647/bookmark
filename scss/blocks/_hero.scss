@@ -70,7 +70,7 @@
 }
 
 
-@include breakpoint-down(576px){
+@include breakpoint-down(600px){
     .hero__text{
         text-align: center;
         margin-right: 0;
