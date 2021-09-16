@@ -53,7 +53,7 @@
   transform: translateX(-800px);
 }
 
-@include breakpoint-down(760px) {
+@include breakpoint-down(780px) {
   .site-nav__list {
     position: absolute;
     position: fixed;
